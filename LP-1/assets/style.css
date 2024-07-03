@@ -5,11 +5,6 @@
   --light-blue: #68dcfa;
 }
 
-a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
 /* Reset CSS para garantir consistência entre navegadores */
 * {
   margin: 0;
@@ -71,6 +66,10 @@ body {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
 /* Container centralizado com largura máxima de 1240px */
 .container {
   width: 100%;
@@ -122,6 +121,7 @@ section#banner-video {
 #pneus .mobile {
   display: block;
 }
+
 #pneus .desktop {
   display: none;
 }
