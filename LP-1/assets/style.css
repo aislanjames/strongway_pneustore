@@ -1,126 +1,184 @@
+/*how to create variables in css*/
+:root {
+  --yellow: #ffe959;
+  --purple: #4e008e;
+  --light-blue: #68dcfa;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Reset CSS para garantir consistência entre navegadores */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Definindo a fonte Hackman - Regular */
 @font-face {
-    font-family: 'Hackman';
-    src: url('fonts/Hackman-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "hackmanregular";
+  src: url("fonts/Hackman-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Definindo a fonte Hackman - Bold */
 @font-face {
-    font-family: 'Hackman';
-    src: url('fonts/Hackman-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Hackman";
+  src: url("fonts/Hackman-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* Definindo a fonte Hackman - Thin */
 @font-face {
-    font-family: 'Hackman';
-    src: url('fonts/Hackman-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
+  font-family: "Hackman";
+  src: url("fonts/Hackman-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 /* Definindo a fonte Hackman - Normal */
 @font-face {
-    font-family: 'Hackman';
-    src: url('fonts/Hackman-Normal.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "hackmannormal";
+  src: url("fonts/Hackman-Normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Utilizando a fonte Hackman no corpo do texto */
 body {
-    font-family: 'Hackman', sans-serif;
+  font-family: "hackmanregular", sans-serif;
 }
 
 /* Exemplos de uso com diferentes estilos */
 .regular-text {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .bold-text {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .thin-text {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .normal-text {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 /* Container centralizado com largura máxima de 1240px */
 .container {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0 15px; /* Espaçamento lateral */
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px; /* Espaçamento lateral */
 }
 
 /* Layout responsivo */
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col {
-    flex: 1;
-    padding: 15px;
+  flex: 1;
+  padding: 15px;
+}
+
+/* Sections */
+section#banner-video {
+  background-image: url("img/video-mobile.svg");
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#banner-video h2 {
+  color: #fff;
+  font-weight: 800;
+}
+
+#banner-video h2 span {
+  font-weight: 400;
+}
+
+#banner-video #description {
+  color: var(--yellow);
+  font-weight: 300;
+}
+
+#pneus {
+  align-items: center;
+  justify-content: center;
+}
+
+#pneus .mobile {
+  display: block;
+}
+#pneus .desktop {
+  display: none;
+}
+
+#pneus #link {
+  padding: 8px 15px;
+  background-color: var(--light-blue);
+  color: var(--purple);
 }
 
 /* Classes específicas para diferentes tamanhos de tela */
 @media (min-width: 992px) {
-    /* Desktop */
-    .col-md-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
+  /* Desktop */
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 
-    .col-md-4 {
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%;
-    }
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
 
-    .col-md-3 {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  section#banner-video {
+    background-image: url("img/video-desktop.svg");
+  }
+
+  #banner-video h2 {
+    font-size: 40px;
+  }
+
+  #banner-video #description {
+    font-size: 24px;
+  }
+
+  #pneus .mobile {
+    display: none;
+  }
+
+  #pneus .desktop {
+    display: block;
+  }
 }
 
 @media (max-width: 991.98px) {
-    /* Dispositivos móveis */
-    .col-sm-12 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
+  /* Dispositivos móveis */
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 
-/* Sections */
-section#video {
-    background-image: url('img/video.svg');
-    background-size: cover;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#video h2 {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 800;
-}
-
-#video h2 span {
-    font-weight: 400;
+  #desc_video {
+    display: none;
+  }
 }
