@@ -117,6 +117,11 @@ a {
   padding: 15px;
 }
 
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
 h3 {
   font-size: 20px;
   line-height: 24px;
@@ -134,7 +139,6 @@ img {
 #link {
   padding: 15px 8px;
   border-radius: 5px;
-  margin: 16px 0;
   font-weight: normal;
 }
 
@@ -167,6 +171,8 @@ section#banner-video {
 }
 
 #pneus {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -191,8 +197,11 @@ section#banner-video {
 }
 
 #pneus p {
-  padding: 16px 0 0 0;
   font-family: 'hackmanlight', sans-serif;
+}
+
+#pneus p, #pneus span.desktop {
+  padding: 16px 0 0 0;
 }
 
 #pneus h3 b {
@@ -203,6 +212,57 @@ section#banner-video {
   display: block;
   width: 100%;
   height: auto;
+}
+
+#button {
+  margin: 16px 0 30px;
+  display: flex;
+}
+
+section#entrega-eficiente {
+  padding: 40px 0;
+}
+
+#compra-facil h2, #entrega-eficiente h2 {
+  color: var(--light-blue);
+  font-weight: normal;
+}
+
+div#desc-compra-facil p, div#desc-entrega-eficiente p {
+  font-family: 'hackmanlight', sans-serif;
+  margin-top: 16px;
+}
+
+div#img-compra, div#img-entrega {
+  align-items: flex-start;
+}
+
+div#img-compra div, div#img-entrega div {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+div#img-compra div span{
+  font-size: 24px;
+  line-height: 28px;
+}
+
+div#img-entrega div span{
+  font-size: 20px;
+  line-height: 24px;
+}
+
+div#img-compra div span, div#img-entrega div span{
+  font-weight: bold;
+  font-family: 'hackmanlight', sans-serif;
+  letter-spacing: 1px;
+}
+
+div#todos-beneficios {
+  text-align: center;
 }
 
 /* Classes específicas para diferentes tamanhos de tela */
@@ -223,6 +283,18 @@ section#banner-video {
     max-width: 25%;
   }
 
+  h3 {
+    font-size: 32px;
+    line-height: 38.4px;
+    margin-bottom: 5px;
+  }
+
+  #link {
+    font-size: 18px;
+    line-height: 21.6px;
+    padding: 13px 19px;
+  }
+
   section#banner-video {
     background-image: url("img/video-desktop.svg");
     height: 600px;
@@ -240,12 +312,27 @@ section#banner-video {
     font-size: 24px;
   }
 
+  #text_pneus {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  #pneus {
+    justify-content: center;
+    flex-direction: column;
+  }
+
   #pneus .mobile {
     display: none;
   }
 
   #pneus .desktop {
     display: block;
+    margin-top: 8px;
+  }
+
+  div#desc-compra-facil span, div#desc-entrega-eficiente span {
+    font-weight: bold;
   }
 }
 
