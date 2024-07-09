@@ -127,7 +127,7 @@ h3 {
   line-height: 24px;
 }
 
-p{
+p {
   line-height: 19.2px;
 }
 
@@ -140,6 +140,7 @@ img {
   padding: 15px 8px;
   border-radius: 5px;
   font-weight: normal;
+  text-align: center;
 }
 
 /* Sections */
@@ -192,20 +193,21 @@ section#banner-video {
 
 #pneus h3 {
   font-weight: normal;
-  font-family: 'hackmanlight', sans-serif;
+  font-family: "hackmanlight", sans-serif;
   padding: 19px 0 0 0;
 }
 
 #pneus p {
-  font-family: 'hackmanlight', sans-serif;
+  font-family: "hackmanlight", sans-serif;
 }
 
-#pneus p, #pneus span.desktop {
+#pneus p,
+#pneus span.desktop {
   padding: 16px 0 0 0;
 }
 
 #pneus h3 b {
-  font-family: 'hackmanbold', sans-serif;
+  font-family: "hackmanbold", sans-serif;
 }
 
 .mobile-banner {
@@ -217,27 +219,32 @@ section#banner-video {
 #button {
   margin: 16px 0 30px;
   display: flex;
+  justify-content: center;
 }
 
 section#entrega-eficiente {
   padding: 40px 0;
 }
 
-#compra-facil h2, #entrega-eficiente h2 {
+#compra-facil h2,
+#entrega-eficiente h2 {
   color: var(--light-blue);
   font-weight: normal;
 }
 
-div#desc-compra-facil p, div#desc-entrega-eficiente p {
-  font-family: 'hackmanlight', sans-serif;
+div#desc-compra-facil p,
+div#desc-entrega-eficiente p {
+  font-family: "hackmanlight", sans-serif;
   margin-top: 16px;
 }
 
-div#img-compra, div#img-entrega {
+div#img-compra,
+div#img-entrega {
   align-items: flex-start;
 }
 
-div#img-compra div, div#img-entrega div {
+div#img-compra div,
+div#img-entrega div {
   text-align: center;
   margin-top: 40px;
   display: flex;
@@ -245,24 +252,208 @@ div#img-compra div, div#img-entrega div {
   gap: 16px;
 }
 
-div#img-compra div span{
+div#img-compra div span {
   font-size: 24px;
   line-height: 28px;
 }
 
-div#img-entrega div span{
+div#img-entrega div span {
   font-size: 20px;
   line-height: 24px;
 }
 
-div#img-compra div span, div#img-entrega div span{
+div#img-compra div span,
+div#img-entrega div span {
   font-weight: bold;
-  font-family: 'hackmanlight', sans-serif;
+  font-family: "hackmanlight", sans-serif;
   letter-spacing: 1px;
 }
 
 div#todos-beneficios {
   text-align: center;
+  font-family: "hackmanthin";
+  margin-top: 40px;
+}
+
+.bg-purple {
+  background-color: var(--purple);
+  color: #fff;
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+  color: #fff;
+}
+
+#pneus-sao-importantes #icon-desc {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 28px 55px;
+  height: 180px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--purple);
+  text-align: center;
+  justify-content: space-between;
+  font-family: "hackmanlight", sans-serif;
+}
+
+#pneus-sao-importantes #icon-desc img {
+  max-width: 70px;
+}
+
+div#backgrounds .container:nth-child(2),
+div#backgrounds .container:nth-child(3) {
+  height: 250px;
+}
+
+div#backgrounds .container:nth-child(1) {
+  height: 360px;
+  padding-top: 16px;
+}
+
+div#backgrounds .container:nth-child(1) p {
+  font-family: "hackmanlight", sans-serif;
+  line-height: 19.2px;
+  margin-top: 16px;
+}
+
+div#backgrounds .container:nth-child(4) {
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 42px;
+}
+
+div#backgrounds .container:nth-child(4) p {
+  font-family: "hackmanlight", sans-serif;
+  color: var(--purple);
+  font-size: 16px;
+  line-height: 19.2px;
+  margin-bottom: 30px;
+}
+
+div#desvalorizacao-de-carro,
+div#manutencao-do-veiculo {
+  position: relative;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  color: var(--yellow);
+  text-align: center;
+}
+
+div#backgrounds .container:nth-child(2) :nth-child(1) {
+  top: -155px;
+}
+
+div#backgrounds .container:nth-child(2) :nth-child(2) {
+  top: -80px;
+}
+
+#pneus-sao-importantes img#arrow-down {
+  width: 45px;
+  position: absolute;
+  top: 225px;
+  right: 15px;
+}
+
+#pneus-sao-importantes #link {
+  background-color: var(--purple);
+  color: var(--yellow);
+}
+
+#pneus-de-todos-tipos p,
+#pneus-de-todos-tipos #icon-desc p,
+#pneus-de-todos-tipos .row {
+  font-family: "hackmanlight", sans-serif;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+#pneus-de-todos-tipos p {
+  margin: 40px 0;
+}
+
+#pneus-de-todos-tipos .row {
+  width: 100%;
+}
+
+#pneus-de-todos-tipos #icon-desc {
+  padding: 28px 55px;
+  height: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--purple);
+  color: var(--yellow);
+  text-align: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 5px;
+}
+
+#pneus-de-todos-tipos .col-md-6,
+#pneus-de-todos-tipos .row {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+#pneus-de-todos-tipos .col-md-6 {
+  gap: 20px;
+  width: 100%;
+}
+
+img#verified {
+  width: 100%;
+  max-width: 50px;
+  position: absolute;
+  top: -20px;
+  right: 30px;
+}
+
+#pneus-de-todos-tipos #icon-desc img {
+  max-height: 70px;
+}
+
+section#pneus-de-todos-tipos .col {
+  text-align: center;
+}
+
+section#pneus-de-todos-tipos .col h2 {
+  font-family: "hackmanbold", sans-serif;
+}
+
+section#pneus-de-todos-tipos .col p {
+  color: var(--light-blue);
+}
+
+section#pneus-de-todos-tipos #anuncios {
+  flex-direction: row;
+}
+
+section#pneus-de-todos-tipos #anuncios p {
+  margin: 12px;
+}
+
+section#pneus-de-todos-tipos #anuncios img {
+  max-height: 30px;
+  width: fit-content;
+}
+
+section#pneus-de-todos-tipos .container > h3 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+section#pneus-de-todos-tipos #link {
+  background-color: var(--purple);
+  color: var(--yellow);
 }
 
 /* Classes específicas para diferentes tamanhos de tela */
@@ -331,8 +522,144 @@ div#todos-beneficios {
     margin-top: 8px;
   }
 
-  div#desc-compra-facil span, div#desc-entrega-eficiente span {
+  div#desc-compra-facil span,
+  div#desc-entrega-eficiente span {
     font-weight: bold;
+  }
+
+  div#todos-beneficios {
+    text-align: center;
+    font-family: "Hackman", sans-serif;
+    margin-top: 48px;
+  }
+
+  div#backgrounds .container:nth-child(1) h2,
+  div#backgrounds .container:nth-child(1) p {
+    max-width: 470px;
+  }
+
+  div#backgrounds .container:nth-child(1) {
+    margin-bottom: 50px;
+  }
+
+  div#backgrounds .container:nth-child(2) :nth-child(1),
+  div#backgrounds .container:nth-child(2) :nth-child(2) {
+    top: 0;
+  }
+
+  .bg-purple,
+  .bg-light-blue {
+    background: none;
+  }
+
+  section#pneus-sao-importantes {
+    background: linear-gradient(
+      #4e008e 0%,
+      #4e008e 40%,
+      #68dcfa 30%,
+      #68dcfa 70%
+    );
+    padding-top: 52px;
+  }
+
+  div#backgrounds .container:nth-child(2) {
+    width: 60%;
+  }
+
+  #pneus-sao-importantes #icon-desc {
+    width: 95%;
+  }
+
+  div#desvalorizacao-de-carro,
+  div#manutencao-do-veiculo {
+    align-items: center;
+  }
+
+  #pneus-sao-importantes img#arrow-down {
+    right: 30px;
+  }
+
+  div#backgrounds .container:nth-child(n) {
+    height: fit-content;
+  }
+
+  div#backgrounds .container:nth-child(4) p {
+    font-size: 24px;
+    line-height: 28.8px;
+    max-width: 700px;
+    text-align: center;
+  }
+
+  div#backgrounds .container:nth-child(4) {
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  #pneus-sao-importantes .container p span {
+    font-weight: bold;
+  }
+
+  div#backgrounds .container:nth-child(1) p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #pneus-de-todos-tipos p:nth-child(1) {
+    max-width: 610px;
+  }
+
+  #pneus-de-todos-tipos p:nth-child(1) span {
+    font-weight: bold;
+  }
+
+  #pneus-de-todos-tipos .col-md-6,
+  #pneus-de-todos-tipos .row {
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  #pneus-de-todos-tipos .col-md-6 {
+    max-width: 100%;
+  }
+
+  #pneus-de-todos-tipos #icon-desc {
+    width: 410px;
+  }
+
+  img#verified {
+    right: -20px;
+  }
+
+  section#pneus-de-todos-tipos .col h2 {
+    max-width: 450px;
+    margin: 30px auto 10px;
+  }
+
+  section#pneus-de-todos-tipos .col p {
+    margin: auto;
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  section#pneus-de-todos-tipos #anuncios img {
+    width: 60px;
+  }
+
+  section#pneus-de-todos-tipos #anuncios p span {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  section#pneus-de-todos-tipos .container > h3 {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-family: 'hackmanthin', sans-serif;
+  }
+
+  section#pneus-de-todos-tipos .container > h3 span {
+    font-family: "Hackman";
+    font-weight: 100;
   }
 }
 
